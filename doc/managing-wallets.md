@@ -44,7 +44,7 @@ $ bitcoin-cli -rpcwallet="wallet-01" encryptwallet "passphrase"
 Once encrypted, the passphrase can be changed with the `walletpassphrasechange` command.
 
 ```
-$ bitcoin-cli -rpcwallet="wallet-01" walletpassphrasechange "oldpassphrase" "newpassphrase"
+$ bitcoin-cli -rpcwallet="wallet-01" walletpassphrasechange "newpassphrase" "newpassphrase"
 ```
 
 The argument passed to `-rpcwallet` is the name of the wallet to be encrypted.

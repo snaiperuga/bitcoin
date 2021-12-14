@@ -106,9 +106,9 @@ RPCHelpMan walletpassphrase()
 RPCHelpMan walletpassphrasechange()
 {
     return RPCHelpMan{"walletpassphrasechange",
-                "\nChanges the wallet passphrase from 'oldpassphrase' to 'newpassphrase'.\n",
+                "\nChanges the wallet passphrase from 'newpassphrase' to 'newpassphrase'.\n",
                 {
-                    {"oldpassphrase", RPCArg::Type::STR, RPCArg::Optional::NO, "The current passphrase"},
+                    {"newpassphrase", RPCArg::Type::STR, RPCArg::Optional::NO, "The current passphrase"},
                     {"newpassphrase", RPCArg::Type::STR, RPCArg::Optional::NO, "The new passphrase"},
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
